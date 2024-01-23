@@ -1,18 +1,22 @@
 import React from "react";
 import Heading from "../Heading/Heading";
 import Card from "../../UI/Card/Card";
-import './Header.css'
+import HeaderCartButton from "./HeaderCartButton";
+import './Header.css';
+import mealsImage from '../../../assets/meals.jpg';
 
 
 const Header = (props) => {
     return (
-        <div className="header">
-            <Heading class='main-heading' value='NeelKamal' />
-            <Card class='cart-card'>
-                <h3>🛒 Your Cart</h3>
-                <Card class='cart-quantity'>0</Card>
-            </Card>
-        </div>
+        <React.Fragment>
+            <header className="header">
+                <Heading class='main-heading' value='NeelKamal' />
+                <HeaderCartButton/>
+            </header>
+            <div className="main-image">
+                <img src={mealsImage} alt="food" />
+            </div>
+        </React.Fragment>
     )
 }
 

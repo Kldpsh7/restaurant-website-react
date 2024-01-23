@@ -1,11 +1,11 @@
+import React from 'react';
 import Header from './components/Layout/Header/Header';
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <Header/>
-      <h1>lets start</h1>
-    </div>
+    </React.Fragment>
   );
 }
 
