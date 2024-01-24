@@ -1,0 +1,33 @@
+.meal-div{
+    display: block;
+    text-align:left;
+}
+
+.meal-name{
+    color: black;
+    display: block;
+    font-size: 20px;
+    margin-left: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.meal-description{
+    color: rgb(49, 47, 47);
+    display: block;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.meal-price{
+    color: rgb(92, 73, 15);
+    display: block;
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 5px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}

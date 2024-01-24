@@ -28,10 +28,20 @@
 .summary-card{
     display: block;
     background-color: rgb(48, 46, 46);
-    margin-top: -10rem;
+    margin-top: -15rem;
     position:relative;
     padding-top: 0.5rem;
     padding-bottom: 2rem;
     border-radius: 15px;
+    width: 40rem;
+}
+
+.meal-list{
+    display: block;
+    background-color: rgb(251, 253, 255);
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-top: 10px;
     width: 50rem;
+    border-radius: 15px;
 }
