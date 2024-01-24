@@ -13,10 +13,12 @@
 }
 
 .cart-card{
-    margin-right: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 30px;
+    margin-top: 20rem;
+    background-color: aliceblue;
+    color: rgb(54, 53, 53);
+    padding: 2rem;
+    display: block;
+    text-align: center;
 }
 
 .cart-quantity{
