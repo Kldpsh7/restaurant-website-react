@@ -10,7 +10,7 @@ const MealItem = (props) => {
                 <span className="meal-price">₹{props.meal.price.toFixed(2)}</span>
             </div>
             <div>
-                <MealItemFrom id={props.meal.id}/>
+                <MealItemFrom id={props.meal.id} item={props.meal}/>
             </div>
         </li>
         <hr/>

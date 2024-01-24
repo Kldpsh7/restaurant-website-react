@@ -1,0 +1,16 @@
+.cart-item-div{
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cart-item-div button{
+    font-weight: normal;
+    padding:0.2rem 0.6rem;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: rgb(172, 70, 70);
+}

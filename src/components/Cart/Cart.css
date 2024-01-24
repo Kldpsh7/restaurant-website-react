@@ -32,6 +32,9 @@
 
 .cart-close-btn{
     margin-right: 1rem;
+    background-color: aliceblue;
+    color: brown;
+    border: 1px solid brown;
 }
 
 .order-btn{
