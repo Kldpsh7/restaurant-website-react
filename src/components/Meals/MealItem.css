@@ -1,6 +1,7 @@
 .meal-div{
-    display: block;
-    text-align:left;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .meal-name{
@@ -30,4 +31,9 @@
     margin-top: 5px ;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+}
+
+.meal-info-div{
+    display: block;
+    text-align: left;
 }

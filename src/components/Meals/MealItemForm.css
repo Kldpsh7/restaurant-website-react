@@ -1,0 +1,15 @@
+.meal-item-form{
+    text-align: right;
+    color: rgb(43, 41, 41);
+}
+
+.meal-item-form input{
+    width: 40px;
+    font-size: 16px;
+}
+
+.meal-item-form label{
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: bold;
+}
