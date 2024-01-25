@@ -18,11 +18,11 @@ const Cart = (props) => {
                 {items.map(item=><CartItem name={item.name} price={item.price} quantity={item.quantity} key={item.id} id={item.id}/>)}
                 <div className="cart-total">
                     <span className="amount-text">Total Amount:</span>
-                    <span className="amount">₹ {cartCtx.totalAmount}</span>
+                    <span className="amount">₹ {cartCtx.totalAmount.toFixed(2)}</span>
                 </div>
                 <div className="cart-buttons-div">
                     <Button class='cart-close-btn' value='Close' onClick={props.onClose}/>
-                    <Button class='order-btn' value='Order'/>
+                    {items.length>0 && <Button class='order-btn' value='Order'/>}
                 </div>
             </Card>
         </Overlay>
