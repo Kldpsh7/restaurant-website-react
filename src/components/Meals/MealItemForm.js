@@ -10,7 +10,8 @@ const MealItemFrom = (props) => {
 
     const addToCart = (e)=>{
         e.preventDefault();
-        cartCtx.addItem(props.item);    
+        cartCtx.addItem(props.item,e.target.name.value);
+        e.target.name.value=1;  
     }
 
     return <form className="meal-item-form" onSubmit={addToCart}>
@@ -20,7 +21,8 @@ const MealItemFrom = (props) => {
             min:'1',
             max:'5',
             defaultValue:'1',
-            step:'1'
+            step:'1',
+            name:'name',
         }}/>
         <Button type='submit' value='+ Add' class='add-item-button'/>
     </form>

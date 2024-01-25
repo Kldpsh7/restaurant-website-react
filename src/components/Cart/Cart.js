@@ -16,7 +16,6 @@ const Cart = (props) => {
         <Overlay visibility={props.visibility}>
             <Card class='cart-card'>
                 {items.map(item=><CartItem name={item.name} price={item.price} quantity={item.quantity} key={item.id} id={item.id}/>)}
-                <hr/>
                 <div className="cart-total">
                     <span className="amount-text">Total Amount:</span>
                     <span className="amount">₹ {cartCtx.totalAmount}</span>

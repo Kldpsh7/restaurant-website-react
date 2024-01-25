@@ -10,12 +10,25 @@ const CartItem = props => {
         cartCtx.removeItem(props.id,props.quantity,props.price);
     };
 
-    return <div className='cart-item-div'>
-    <span>{props.quantity}</span>
-        <span>{props.name}</span>
-        <span>₹{props.price*props.quantity}</span>
-        <Button value='Delete' onClick={onDelete}/>
-    </div>
+    const onAdd = () => {
+        cartCtx.addQuantity(props.id,props.price);
+    }
+
+    return <>
+        <div className='cart-item-div'>
+            <div className='cartItem-info-div'>
+                <span className='cart-item-name'>{props.name}</span>
+                <span className='cart-item-price'>₹{props.price}</span>
+            </div>
+            <span className='cart-item-quantity'>x {props.quantity}</span>
+            <span className='cart-item-total'>₹{props.price*props.quantity}</span>
+            <div className='cartItem-button-div'>
+                <Button value='-' onClick={onDelete}/>
+                <Button value='+' onClick={onAdd}/>
+            </div>
+        </div>
+        <hr/>
+    </>
 };
 
 export default CartItem;
