@@ -12,7 +12,7 @@ import './Header.css';
 const Header = () => {
 
     const cartCtx = useContext(CartContext);
-    const numberOfCartItems = cartCtx.items.length;
+    const numberOfCartItems = cartCtx.items.reduce((a,b)=>+a + +b.quantity,0);
 
     const [cartVisibility,setCartVisibility] = useState('');
 
